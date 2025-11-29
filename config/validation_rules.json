@@ -1,0 +1,29 @@
+{
+  "required_sections": [
+    {
+      "id": "Indikation",
+      "alternatives": ["Indikation", "Vorgeschichte", "Vorgeschichte/Indikation", "Indikation / Vorgeschichte"]
+    },
+    {
+      "id": "Diagnose",
+      "alternatives": ["Diagnose"]
+    },
+    {
+      "id": "Operation",
+      "alternatives": ["Operation"]
+    },
+    {
+      "id": "Vorgehen",
+      "alternatives": ["Vorgehen"]
+    },
+    {
+      "id": "Weiteres Prozedere",
+      "alternatives": ["Weiteres Prozedere", "Postoperatives Vorgehen"]
+    }
+  ],
+  "forbidden_keywords": [
+    "Error",
+    "Exception",
+    "Confidential"
+  ]
+}
