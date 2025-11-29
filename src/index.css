@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    /* Default border color */
+    @apply border-gray-200;
+  }
+
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased;
+    font-family: 'Space Grotesk', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+}
+
+@layer components {
+  /* Custom scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    @apply w-2 h-2;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-gray-100 rounded;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded hover:bg-gray-400;
+  }
+
+  /* Card styles */
+  .card {
+    @apply bg-white rounded-lg shadow-sm border border-gray-200;
+  }
+
+  /* Button styles */
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply btn bg-blue-600 text-white hover:bg-blue-700 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply btn bg-gray-200 text-gray-800 hover:bg-gray-300 active:scale-95;
+  }
+
+  .btn-success {
+    @apply btn bg-green-600 text-white hover:bg-green-700 active:scale-95;
+  }
+
+  .btn-danger {
+    @apply btn bg-red-600 text-white hover:bg-red-700 active:scale-95;
+  }
+
+  /* Badge styles */
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  /* Input styles */
+  .input {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all;
+  }
+
+  /* Loading spinner */
+  .spinner {
+    @apply inline-block w-6 h-6 border-4 border-gray-200 border-t-blue-600 rounded-full animate-spin;
+  }
+
+  /* Quality badge */
+  .quality-badge {
+    @apply absolute top-2 right-2 px-2 py-1 rounded-md text-xs font-bold text-white shadow-lg;
+  }
+
+  /* Selection overlay */
+  .selection-overlay {
+    @apply absolute inset-0 bg-blue-600 bg-opacity-20 border-4 border-blue-600 rounded-lg flex items-center justify-center;
+  }
+
+  /* Suggested badge */
+  .suggested-badge {
+    @apply absolute top-2 left-2 px-2 py-1 bg-yellow-400 text-gray-900 rounded-md text-xs font-bold shadow-lg flex items-center gap-1;
+  }
+}
+
+@layer utilities {
+  /* Touch-friendly sizing for tablets */
+  .touch-target {
+    @apply min-h-[44px] min-w-[44px];
+  }
+
+  /* Smooth transitions */
+  .transition-smooth {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  /* Glass morphism effect */
+  .glass {
+    @apply bg-white bg-opacity-80 backdrop-blur-md;
+  }
+
+  /* Gradient backgrounds */
+  .gradient-blue {
+    @apply bg-gradient-to-r from-blue-500 to-blue-700;
+  }
+
+  .gradient-green {
+    @apply bg-gradient-to-r from-green-500 to-green-700;
+  }
+
+  /* Medical-inspired chrome */
+  .medical-grid {
+    background-image:
+      linear-gradient(90deg, rgba(255, 255, 255, 0.35) 1px, transparent 1px),
+      linear-gradient(0deg, rgba(255, 255, 255, 0.35) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  .glass-panel {
+    @apply bg-white/80 backdrop-blur-xl border border-white shadow-xl;
+  }
+
+  .accent-ring {
+    box-shadow: 0 0 0 1px rgba(236, 72, 153, 0.35), 0 12px 40px rgba(15, 23, 42, 0.18);
+  }
+
+  .metallic-sheen {
+    background: linear-gradient(120deg, #f9fafb 0%, #fef2f8 35%, #f3f4f6 70%, #ffe1ef 100%);
+  }
+
+  .hero-grid {
+    background-image:
+      radial-gradient(circle at 20% 20%, rgba(56, 189, 248, 0.18), transparent 30%),
+      radial-gradient(circle at 80% 0%, rgba(14, 165, 233, 0.16), transparent 25%),
+      radial-gradient(circle at 50% 90%, rgba(236, 72, 153, 0.12), transparent 35%);
+  }
+
+  .mesh-lines {
+    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.06) 1px, transparent 0),
+      linear-gradient(0deg, rgba(255, 255, 255, 0.04) 1px, transparent 0);
+    background-size: 26px 26px;
+  }
+
+  .glow-ring {
+    box-shadow: 0 20px 70px rgba(56, 189, 248, 0.25), 0 30px 100px rgba(14, 165, 233, 0.12);
+  }
+
+  /* Shadow variations */
+  .shadow-card {
+    @apply shadow-md hover:shadow-lg transition-shadow;
+  }
+
+  /* Tablet optimized */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .tablet\:text-lg {
+      @apply text-lg;
+    }
+
+    .tablet\:p-6 {
+      @apply p-6;
+    }
+  }
+}
+
+/* Custom animations */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.skeleton {
+  animation: shimmer 2s infinite linear;
+  background: linear-gradient(
+    to right,
+    #f0f0f0 4%,
+    #e0e0e0 25%,
+    #f0f0f0 36%
+  );
+  background-size: 1000px 100%;
+}
