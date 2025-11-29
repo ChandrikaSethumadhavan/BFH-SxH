@@ -8,3 +8,6 @@ segmentation_phase_inference.ipynb
 segmentation_phase_inference_video.ipynb
 test_new_checkpoint.py
 test_notebook_cells.py
+*.pth
+/ml_pipeline/artifacts
+checkpoints/
