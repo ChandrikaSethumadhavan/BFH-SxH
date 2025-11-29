@@ -1,0 +1,10 @@
+/hack
+/hack_tf215
+*.png
+.env
+.claude/
+segmentation_phase_inference copy.ipynb
+segmentation_phase_inference.ipynb
+segmentation_phase_inference_video.ipynb
+test_new_checkpoint.py
+test_notebook_cells.py

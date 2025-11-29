@@ -1,0 +1,89 @@
+{
+  "video": "video01_00160_surgical.mp4",
+  "analysis_timestamp": "2025-11-29T15:15:19",
+  "key_frames": [
+    {
+      "frame_number": 30,
+      "phase": "closure",
+      "importance_score": 92.13165096566081,
+      "detected_objects": [
+        [
+          "cystic_duct",
+          0.3699913024902344
+        ],
+        [
+          "hook",
+          0.22224044799804688
+        ],
+        [
+          "liver",
+          0.10079574584960938
+        ]
+      ],
+      "timestamp_sec": 1.2,
+      "timestamp_str": "00:01.20",
+      "ai_description": "00:01.20 view with cystic_duct, hook, liverPhase: ClosureImportance score 92.1; review instrument positioning"
+    },
+    {
+      "frame_number": 60,
+      "phase": "closure",
+      "importance_score": 92.12417462840676,
+      "detected_objects": [
+        [
+          "cystic_duct",
+          0.3656005859375
+        ],
+        [
+          "hook",
+          0.20827484130859375
+        ],
+        [
+          "liver",
+          0.12099456787109375
+        ]
+      ],
+      "timestamp_sec": 2.4,
+      "timestamp_str": "00:02.40",
+      "ai_description": "00:02.40 view with cystic_duct, hook, liverPhase: ClosureImportance score 92.1; review instrument positioning"
+    },
+    {
+      "frame_number": 0,
+      "phase": "closure",
+      "importance_score": 92.11185805499554,
+      "detected_objects": [
+        [
+          "cystic_duct",
+          0.34856414794921875
+        ],
+        [
+          "hook",
+          0.22209548950195312
+        ],
+        [
+          "liver",
+          0.1199188232421875
+        ]
+      ],
+      "timestamp_sec": 0.0,
+      "timestamp_str": "00:00.00",
+      "ai_description": "00:00.00 view with cystic_duct, hook, liverPhase: ClosureImportance score 92.1; review instrument positioning"
+    }
+  ],
+  "processed_frames": [
+    {
+      "frame_number": 0,
+      "timestamp_sec": 0.0,
+      "timestamp_str": "00:00.00"
+    },
+    {
+      "frame_number": 30,
+      "timestamp_sec": 1.2,
+      "timestamp_str": "00:01.20"
+    },
+    {
+      "frame_number": 60,
+      "timestamp_sec": 2.4,
+      "timestamp_str": "00:02.40"
+    }
+  ]
+}
