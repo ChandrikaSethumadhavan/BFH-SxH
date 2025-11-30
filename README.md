@@ -4,14 +4,14 @@ AI-powered surgical documentation tool with Tinder-style swipe interface for fas
 
 ## Features
 
-- 📤 **Upload & Process**: Upload surgical videos/images with drag-and-drop
-- 🤖 **AI Quality Filtering**: Automatically removes blurry, dark, and low-quality images
-- 🖼️ **Gallery View**: Browse and select images in a grid layout
-- 👆 **Swipe Mode**: Tinder-style swipe interface for rapid image selection
-- 📊 **Quality Metrics**: Real-time quality scores for each image
-- ✨ **AI Suggestions**: Smart recommendations for important images
-- 📝 **Auto Reports**: AI-generated surgical reports with selected images
-- 📱 **Tablet Optimized**: Touch-friendly interface designed for 10-13" tablets
+- **Upload & Process**: Upload surgical videos/images with drag-and-drop
+- **AI Quality Filtering**: Automatically removes blurry, dark, and low-quality images
+- **Gallery View**: Browse and select images in a grid layout
+- **Swipe Mode**: Tinder-style swipe interface for rapid image selection
+- **Quality Metrics**: Real-time quality scores for each image
+- **AI Suggestions**: Smart recommendations for important images
+- **Auto Reports**: AI-generated surgical reports with selected images
+- **Tablet Optimized**: Touch-friendly interface designed for 10-13" tablets
 
 ## Tech Stack
 
