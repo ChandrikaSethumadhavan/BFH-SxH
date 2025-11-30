@@ -72,11 +72,10 @@ surgical-doc-app/
 └── README.md
 ```
 
-## Using Mock Data vs Real Backend
 
-### Development Mode (Mock Data - Default)
 
-The app comes with realistic mock data including:
+### Development Mode (demo Data - Default)
+
 - 100 sample surgical images
 - Quality scores and metrics
 - AI suggestions
@@ -85,7 +84,7 @@ The app comes with realistic mock data including:
 **To use mock data** (current setup):
 ```typescript
 // src/services/api.ts
-const USE_MOCK_DATA = true; // ✅ Default
+const USE_DATA = true; // Default
 ```
 
 ### Production Mode (Real Backend)
@@ -171,7 +170,6 @@ Replace the placeholder images in `src/services/mockData.ts`:
 
 ```typescript
 const generatePlaceholderImage = (id: number, seed: string) => {
-  // Replace with your own image URLs
   return `https://your-image-cdn.com/surgical-${id}.jpg`;
 };
 ```
@@ -192,55 +190,6 @@ In `src/components/SwipeMode.tsx`:
 const swipeThreshold = 100; // Adjust swipe distance
 ```
 
-## Demo Preparation Checklist
-
-Before the hackathon demo:
-
-- [ ] Prepare 3-5 sample surgical videos
-- [ ] Test on actual iPad/tablet
-- [ ] Practice the 3-minute demo pitch
-- [ ] Ensure smooth animations
-- [ ] Test offline with mock data
-- [ ] Record backup demo video
-- [ ] Prepare talking points
-- [ ] Test export PDF functionality
-
-## Demo Script (3 Minutes)
-
-**Minute 1**: Problem explanation
-- "Surgeons spend hours manually documenting procedures"
-- Show unorganized surgical footage
-
-**Minute 2**: Live demo
-1. Upload video → shows AI processing
-2. Navigate to gallery → show filtered results
-3. Switch to swipe mode → demonstrate swipe interface on tablet
-4. Generate report → show AI-generated output
-
-**Minute 3**: Impact
-- "Reduces 2 hours to 5 minutes"
-- Show tablet vs desktop
-- Mention AI validation and standards
-
-## Troubleshooting
-
-### Images not loading
-- Check network connection
-- Verify placeholder image URLs are accessible
-- Check browser console for errors
-
-### Swipe not working
-- Ensure you're using a touch device or mouse
-- Check if Framer Motion is installed
-- Clear browser cache
-
-### Build errors
-```bash
-# Clear node_modules and reinstall
-rm -rf node_modules package-lock.json
-npm install
-```
-
 ## Future Enhancements
 
 - [ ] Voice annotations
@@ -252,19 +201,3 @@ npm install
 - [ ] Offline mode with IndexedDB
 - [ ] Multi-language support
 
-## License
-
-MIT License - Feel free to use for your hackathon!
-
-## Support
-
-For issues or questions:
-- Check browser console for errors
-- Verify all dependencies are installed
-- Ensure Node.js version >= 18
-
----
-
-**Built for Challenge 3: Surgical Documentation**
-
-Good luck with your hackathon! 🚀
